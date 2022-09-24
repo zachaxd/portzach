@@ -9,7 +9,7 @@ function Navbar() {
     const handleClick = () => setNav(!nav);
 
   return (
-    <div className='flex justify-between items-center w-full p-6 text-sm backdrop-blur-xl border-b-2 border-gray-200'>
+    <div className='flex justify-between items-center w-full p-6 text-md text-zinc-800 backdrop-blur-xl border-b-2 bg-gray-100 border-gray-200'>
         {/* links */}
         <div className='hidden md:flex space-x-6'>
         <Link to="/">Home</Link>
