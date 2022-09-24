@@ -23,9 +23,9 @@ function Navbar() {
         <Link to="/experience">Experience</Link>
         </div>
         {/* mobile menu */}
-       <div className={!nav ? 'hidden' : 'absolute top-0 right-0 shadow-md h-screen w-3/4 backdrop-blur-xl bg-gray-100 border-l-2 border-gray-200 text-gray-700 flex flex-col p-4 text-2xl items-center justify-center'}>
-       <Link to="/" className='w-full p-4 rounded border-b border-zinc-300 hover:bg-gray-200'>Home</Link>
-        <Link to="/projects" className='w-full p-4 rounded border-b border-zinc-300 hover:bg-gray-200'>Projects</Link>
+       <div className={!nav ? 'hidden' : 'absolute top-0 right-0 shadow-md h-screen w-3/4 backdrop-blur-xl bg-gray-100 border-l-2 border-gray-200 text-gray-700 divide-y divide-slate-400 flex flex-col p-4 text-2xl items-center justify-center'}>
+       <Link to="/" className='w-full p-4 rounded hover:bg-gray-200'>Home</Link>
+        <Link to="/projects" className='w-full p-4 rounded hover:bg-gray-200'>Projects</Link>
         <Link to="/experience" className='w-full p-4 rounded hover:bg-gray-200'>Experience</Link>
        </div>
     </div>
