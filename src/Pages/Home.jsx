@@ -6,13 +6,14 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronRight from '@mui/icons-material/ChevronRight';
 import { FaReact } from 'react-icons/fa';
 import {SiTailwindcss} from 'react-icons/si';
+import bg from '../assets/endless-clouds.svg'
 
 function Home() {
 
   const current = new Date();
   const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`;
   return (
-    <div className='flex w-full h-auto shadow-xl items-center justify-center bg-gradient-to-bl from-slate-900 to-zinc-900'>
+    <div className='flex flex-col w-full min-h-screen shadow-xl items-center justify-center bg-hero_pattern bg-repeat bg-gradient-to-bl from-slate-900 to-zinc-900'>
       {/* about */}
       <div className="w-full flex items-center justify-center p-12 flex items-center">
           <div className=" z-20 flex gap-2 flex-col w-full items-center justify-center h-full">
@@ -41,7 +42,7 @@ function Home() {
                       <span className="rounded-full bg-gradient-to-r from-indigo-500 to-sky-600 px-3 py-0.5 text-sm font-md leading-5 text-white">
                         Latest project: Marketplace
                       </span>
-                      <span className="ml-4 text-sm">Check it out</span>
+                      <span className="ml-4 text-sm">View my progress</span>
                       <ChevronRight className="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" />
                     </a>
                 </div>
@@ -49,6 +50,7 @@ function Home() {
 
 
       </div>
+      <button className='p-4 rounded-full bg-black/40 mt-12 hover:pt-8 duration-150'><ChevronRight className="h-5 w-5 text-gray-500 rotate-90" aria-hidden="true" /></button>
     </div>
   )
 }
