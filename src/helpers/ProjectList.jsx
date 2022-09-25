@@ -9,25 +9,32 @@ export const ProjectList = [
     {
         name: "Algorithm Visualiser",
         image: Proj1,
+        date: "9/10/22",
+        skills: "React, JavaScript"
     },
     {
         name: "Ecommerce Website",
         image: Proj2,
+        date: "9/10/22"
     },
     {
         name: "Spotify Clone",
         image: Proj3,
+        date: "9/10/22"
     },
     {
         name: "Social Media Website",
         image: Proj4,
+        date: "9/10/22"
     },
     {
         name: "Dashboard",
         image: Proj5,
+        date: "9/10/22"
     },
     {
         name: "Mobile Game",
         image: Proj6,
+        date: "9/10/22"
     },
 ]
