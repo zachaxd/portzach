@@ -13,7 +13,7 @@ function Home() {
   const current = new Date();
   const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`;
   return (
-    <div className='flex flex-col w-full min-h-screen shadow-xl items-center justify-center bg-hero_pattern bg-repeat bg-gradient-to-bl from-slate-900 to-zinc-900'>
+    <div className='flex flex-col w-full min-h-screen shadow-xl items-center justify-center bg-gradient-to-bl from-slate-900 to-zinc-900'>
       {/* about */}
       <div className="w-full flex items-center justify-center p-12 flex items-center">
           <div className=" z-20 flex gap-2 flex-col w-full items-center justify-center h-full">

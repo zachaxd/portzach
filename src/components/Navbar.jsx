@@ -10,16 +10,16 @@ function Navbar() {
     const handleClick = () => setNav(!nav);
 
   return (
-    <div className='flex justify-between items-center w-full py-4 px-6 text-md text-white/90 fixed blur-backdrop-filter border-b-2 border-gray-800/40'>
+    <div className='inline-flex justify-between items-center rounded-full bg-black/40 px-6 py-1 text-sm m-4 text-white border-b-2 border-gray-800/40'>
         {/* links */}
           <ul className='hidden md:flex space-x-6'>
-        <Link to="/" className='hover:text-indigo-500 hover:-mb-5 hover:border-b-2 border-gray-200/90'>Home</Link>
-        <Link to="/projects" className='hover:text-indigo-500 hover:-mb-5 hover:border-b-2 border-gray-200/90'>Projects</Link>
-        <Link to="/experience" className='hover:text-indigo-500 hover:-mb-5 hover:border-b-2 border-gray-200/90'>Experience</Link>
+        <Link to="/" className='hover:text-indigo-500 hover:-mb-2 hover:border-b-2 border-slate-500/90'>Home</Link>
+        <Link to="/projects" className='hover:text-indigo-500 hover:-mb-2 hover:border-b-2 border-slate-500/90'>Projects</Link>
+        <Link to="/experience" className='hover:text-indigo-500 hover:-mb-2 hover:border-b-2 border-slate-500/90'>Experience</Link>
         </ul>
         {/* toggle button */}
         <div>
-            <button className='md:hidden absolute z-10'
+            <button className='md:hidden relative z-10'
             onClick={handleClick}>
                 {!nav ? <MenuIcon /> : <CloseIcon />}
             </button>
