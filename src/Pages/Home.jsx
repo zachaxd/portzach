@@ -13,7 +13,7 @@ function Home() {
   const current = new Date();
   const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`;
   return (
-    <div className='flex flex-col w-full min-h-screen shadow-xl items-center justify-center bg-gradient-to-bl from-slate-900 to-zinc-900'>
+    <div className='flex flex-col w-full min-h-screen shadow-xl items-center justify-center bg-gradient-to-br from-zinc-900 to-slate-900'>
       {/* about */}
       <div className="w-full flex items-center justify-center p-12 flex items-center">
           <div className=" z-20 flex gap-2 flex-col w-full items-center justify-center h-full">
@@ -27,7 +27,7 @@ function Home() {
               <div className="text-gray-200/90 text-md max-w-[540px] mt-4 font-medium">
               I'm a front end developer that specializes in building 
               <span className='text-transparent 
-                  bg-clip-text bg-gradient-to-bl from-indigo-500 to-sky-500 font-semibold'> exceptional</span> digital experiences.  I have a passion for high quality, efficient code and achieving elegant solutions. </div>
+                  bg-clip-text bg-gradient-to-bl from-indigo-500 to-sky-500 font-semibold'> exceptional</span> digital experiences.  I have a passion for writing high quality, efficient code that achieves elegant solutions. </div>
               {/* line */}
               <div className='h-[200px] w-[1px] bg-gray-200/50 items-center my-8 mx-auto'></div>
               {/* Project Modal */}
