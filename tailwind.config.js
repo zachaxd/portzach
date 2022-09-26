@@ -16,7 +16,7 @@ module.exports = {
     extend: {
       backgroundImage:
          {
-           'hero_pattern': "url('/src/assets/endless-clouds.svg)"
+           'hero-pattern': "url('/src/assets/endless-clouds.svg')"
          }
      },
   },

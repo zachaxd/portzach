@@ -10,13 +10,14 @@ export const ProjectList = [
         name: "Algorithm Visualiser",
         image: Proj1,
         date: "9/10/22",
-        skills: "React, JavaScript",
+        skills: ["React", "JavaScript"],
         description: "A simple project made last week"
     },
     {
         name: "Ecommerce Website",
         image: Proj2,
         date: "9/10/22",
+        skills: ["React", "TailwindCSS"],
         description: "A simple project made last week"
     },
     {
