@@ -10,8 +10,8 @@ function Projects() {
       <span className='text-md max-w-[400px] text-gray-200/80 items-center justify-center'>I’ve worked on tons... sooo many</span></div>
       {/* project list container */}
       <div className='inline-grid md:grid-cols-3 gap-8 '>
-        {ProjectList.map((project) => {
-          return <ProjectItem name={project.name} image={project.image} date={project.date}/>
+        {ProjectList.map((project, idx) => {
+          return <ProjectItem id={idx} name={project.name} image={project.image} date={project.date}/>
         })}
       </div>
       <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
