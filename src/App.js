@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import Projects from './Pages/Projects';
 import Experience from './Pages/Experience';
 import ProjectDisplay from './Pages/ProjectDisplay';
+import Slideshow from './Pages/Slideshow';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/project/:id' element={<ProjectDisplay />} />
         <Route path='/experience' element={<Experience />} />
+        <Route path='/slideshow' element={<Slideshow />} />
       </Routes>
       <Footer />
     </Router>

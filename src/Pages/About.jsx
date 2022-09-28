@@ -5,18 +5,20 @@ import Proj1 from "../assets/proj1.jpg"
 
 function About() {
   return (
-    <div className='flex px-32 py-8 mx-auto items-center text-gray-200/90'>
+    <div className='flex px-8 py-8 mx-auto items-center text-gray-200/90'>
         {/* Text container */}
         <div className='text-left w-2/3'>
     {/* Header */}
     <div className='flex items-center mb-4 gap-4'>
-         <h2 className='font-extrabold -mt-2 py-2 text-transparent text-xl 
+         <div className='flex items-center justify-center'>
+         <h2 className='font-extrabold text-transparent text-xl 
                   bg-clip-text bg-gradient-to-bl w-[85px] from-indigo-500 to-sky-500'>
                    About Me
                 </h2>
+         </div>
         <span className='bg-white/20 w-[200px] h-[1px]'></span>
     </div>
-        <div className='flex gap-4 flex-col text-sm'>
+        <div className='flex gap-4 flex-col max-w-[360px] text-sm'>
         <p>
             Hello! My name is Zachary and I enjoy building things that help people.
             My interest in web development started back in 2018 when I started a digital media company — turns out hacking together wordpress themes and shopify plugins taught me a lot about the basics.

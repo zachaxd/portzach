@@ -9,6 +9,8 @@ import {SiTailwindcss} from 'react-icons/si';
 import bg from '../assets/endless-clouds.svg'
 import About from './About';
 import FeaturedProjects from './FeaturedProjects';
+import Slideshow from './Slideshow';
+import { Slide } from '@mui/material';
 
 function Home() {
 
@@ -54,6 +56,7 @@ function Home() {
       </div>
     <About />
     <FeaturedProjects />
+    <Slideshow />
     </div>
   )
 }
