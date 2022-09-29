@@ -12,7 +12,7 @@ function Navbar() {
     const splitLocation = pathname.split("/");
 
   return (
-    <div className='flex justify-between items-center m-4'>
+    <div className='flex justify-between px-12 py-2 items-center m-4'>
         {/* links */}
           <ul className='hidden md:flex block transition rounded-full bg-white/90 px-4 py-2 gap-6 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10'>
         <li><NavLink exact to="/" className={splitLocation[1] === "" ? "text-indigo-500" : ""}>Home</NavLink></li>

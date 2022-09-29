@@ -5,7 +5,7 @@ import Proj1 from "../assets/proj1.jpg"
 
 function About() {
   return (
-    <div className='flex p-12 w-full mx-auto bg-black/80 items-center text-gray-200/90'>
+    <div className='flex p-12 w-full mx-auto justify-center bg-black/80 items-center text-gray-200/90'>
         {/* Text container */}
         <div className='text-left w-2/3'>
     {/* Header */}
@@ -31,7 +31,7 @@ function About() {
         </p>
         </div>
             {/* Tech container */}
-            <div className='flex justify-between mt-4 w-[360px]'>
+            <div className='flex justify-between -ml-2 mt-4 w-[360px]'>
                 {/* Left */}
                 <div className='flex flex-col'>
                     <div className='flex items-center text-sm'>
@@ -58,7 +58,7 @@ function About() {
         </div>
         {/* Img container */}
         <div className=' h-[200px] flex items-center justify-center p-2'>
-            <img src={Proj1} alt="" className=' h-[300px] rounded-full shadow-lg border-2 border-gray-200/20'/>
+            <img src={Proj1} alt="" className=' h-[140px] rounded-lg shadow-lg border-2 border-gray-200/20'/>
         </div>
     </div>
   )
