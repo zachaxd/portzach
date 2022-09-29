@@ -8,9 +8,10 @@ import {SiTailwindcss} from 'react-icons/si';
 
 function FeaturedProjects() {
   return (
-    <div className='flex-col mx-auto px-16'>
-         <div className='flex items-center mb-4 gap-4'>
-         <div className='flex items-center justify-center'>
+    <div className='flex items-center justify-center mx-auto w-full p-12 border-y border-gray-200/10 bg-gradient-to-tr from-black/80 via-indigo-500/10 to-black/80'>
+         <div className=''>
+            <div className='flex items-center mb-4 gap-4'>
+         <div className=''>
          <h2 className='font-extrabold text-transparent text-xl 
                   bg-clip-text bg-gradient-to-r from-indigo-500 to-sky-500'>
                    Some Things I've Built
@@ -19,14 +20,14 @@ function FeaturedProjects() {
         <span className='bg-white/20 w-[200px] h-[1px]'></span>
     </div>
         {/* content container */}
-        <div className='flex items-center justify-between text-gray-200/80'>
+        <div className='flex items-center text-gray-200/80'>
             {/* img container */}
-            <div className='flex -mr-[100px]'>
+            <a href="#" className='transition-all duration-300 hover:bg-gradient-to-r from-black/40 to-transparent'><div className='flex -mr-[100px]'>
                 <img src={Proj1} className='w-full h-[300px] 
                 rounded-lg shadow-lg border 
                 border-gray-200/20
                 saturate-150 -z-10' alt="" />
-            </div>
+            </div></a>
             {/* Description container */}
             <div className='flex flex-col gap-2 text-right'>
                 <p className='text-indigo-500 font-bold tracking-widest text-sm'>
@@ -57,6 +58,8 @@ function FeaturedProjects() {
                 </div>
             </div>
         </div>
+        </div>
+      
     </div>
   )
 }

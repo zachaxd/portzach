@@ -19,7 +19,7 @@ function Home() {
   return (
     <div className='flex flex-col w-full min-h-screen items-center justify-center'>
       {/* about */}
-      <div className="w-full flex items-center justify-center p-12 bg-gradient-to-br from-zinc-900 to-slate-900">
+      <div className="w-full flex items-center justify-center p-12 bg-gradient-to-b from-black/20 to-slate-900">
           <div className=" z-20 flex gap-2 flex-col w-full items-center justify-center h-full">
               <div className="text-white font-md text-xl flex-col flex ">
                 Hello, my name is
@@ -56,7 +56,6 @@ function Home() {
       </div>
     <About />
     <FeaturedProjects />
-    <Slideshow />
     </div>
   )
 }

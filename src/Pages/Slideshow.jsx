@@ -4,7 +4,7 @@ import Proj1 from "../assets/proj1.jpg"
 function Slideshow() {
   return (
     <div className='flex-col items-center justify-center bg-gradient-to-r from-slate-900/20 via-indigo-500/20 to-slate-900/20
-     mx-auto p-6 border-t border-b border-gray-200/10'>
+     mx-auto p-6 border-y border-gray-200/10'>
         <h1 className='text-3xl font-bold text-indigo-500'>Some Things I've Built</h1>
         <a href="#" className=''>
             <div className=''>

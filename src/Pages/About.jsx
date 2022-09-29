@@ -5,7 +5,7 @@ import Proj1 from "../assets/proj1.jpg"
 
 function About() {
   return (
-    <div className='flex px-8 py-8 mx-auto items-center text-gray-200/90'>
+    <div className='flex p-12 w-full mx-auto bg-black/80 items-center text-gray-200/90'>
         {/* Text container */}
         <div className='text-left w-2/3'>
     {/* Header */}
@@ -20,7 +20,7 @@ function About() {
     </div>
         <div className='flex gap-4 flex-col max-w-[360px] text-sm'>
         <p>
-            Hello! My name is Zachary and I enjoy building things that help people.
+        Hello 👋 My name is Zachary and I enjoy building things that help people.
             My interest in web development started back in 2018 when I started a digital media company — turns out hacking together wordpress themes and shopify plugins taught me a lot about the basics.
         </p>
         <p>
@@ -57,8 +57,8 @@ function About() {
             </div>
         </div>
         {/* Img container */}
-        <div className='flex w-1/3 items-center justify-center p-2'>
-            <img src={Proj1} alt="" className='w-full h-[300px] rounded-lg shadow-lg border border-gray-200/20'/>
+        <div className=' h-[200px] flex items-center justify-center p-2'>
+            <img src={Proj1} alt="" className=' h-[300px] rounded-full shadow-lg border-2 border-gray-200/20'/>
         </div>
     </div>
   )
