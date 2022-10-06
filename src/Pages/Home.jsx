@@ -11,6 +11,7 @@ import About from './About';
 import FeaturedProjects from './FeaturedProjects';
 import Slideshow from './Slideshow';
 import { Slide } from '@mui/material';
+import GitCalendar from '../components/GitCalendar';
 
 function Home() {
 
@@ -44,15 +45,18 @@ function Home() {
             <span> built using: <div className='flex items-center justify-center my-1 gap-2'><FaReact className='text-sky-500 -mr-1'/> <p>React</p><SiTailwindcss className='text-sky-500 -mr-1'/><p>TailwindCSS</p></div></span></span></h2>
               <a href="/projects" className="inline-flex items-center rounded-full bg-black/40 p-1 pr-2 m-2 text-white hover:text-gray-200 hover:bg-black/90 sm:text-base lg:text-sm xl:text-base">
                       <span className="rounded-full bg-gradient-to-r from-indigo-500 to-sky-600 px-3 py-0.5 text-sm font-md leading-5 text-white">
-                        Wordle Clone
+                        Github
                       </span>
-                      <span className="ml-4 text-sm">Check it out</span>
+                      <span className="ml-4 text-sm">View my activity</span>
                       <ChevronRight className="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" />
                     </a>
                 </div>
+                
+                <GitCalendar className=''/>
+                <div className='flex items-center justify-center text-xs'><button className='text-slate-300/90 hover:text-indigo-500 transition duration-300 hover:-translate-y-1'>
+                    <GitHubIcon /> <span>View my github activity ></span>
+                </button></div>
           </div>
-
-
       </div>
     <About />
     <FeaturedProjects />
