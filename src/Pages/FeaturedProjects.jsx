@@ -65,7 +65,6 @@ function FeaturedProjects() {
         </div>
         </div>
         {/* other projects */}
-     
     </div>
   )
 }

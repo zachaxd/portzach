@@ -12,6 +12,8 @@ import FeaturedProjects from './FeaturedProjects';
 import Slideshow from './Slideshow';
 import { Slide } from '@mui/material';
 import GitCalendar from '../components/GitCalendar';
+import Breadcrumbs from '../components/Breadcrumbs'
+import AboutNew from './AboutNew';
 
 function Home() {
 
@@ -33,8 +35,6 @@ function Home() {
               I'm a front end developer that specializes in building 
               <span className='text-transparent 
                   bg-clip-text bg-gradient-to-bl from-indigo-500 to-sky-500 font-semibold'> exceptional</span> digital experiences.  I have a passion for creating efficient products that achieve elegant solutions. </div>
-              {/* line */}
-              <div className='h-[200px] w-[1px] bg-gray-200/50 items-center my-8 mx-auto'></div>
               {/* Project Modal */}
               <div className=' space-y-4 text-gray-200/90 text-md'>
                 <h2 className='text-sm max-w-[px] flex flex-col items-center'>
@@ -52,13 +52,24 @@ function Home() {
                     </a>
                 </div>
                 
+                <div className='flex-col items-center text-xs'>
                 <GitCalendar className=''/>
-                <div className='flex items-center justify-center text-xs'><button className='text-slate-300/90 hover:text-indigo-500 transition duration-300 hover:-translate-y-1'>
-                    <GitHubIcon /> <span>View my github activity ></span>
-                </button></div>
+                <div className='flex items-center justify-end m-2 text-xs'>
+                  <button className='text-slate-300/90 hover:text-indigo-500 transition duration-300 hover:translate-x-1'>
+                  <div className="flex items-center gap-1">
+                  <GitHubIcon className=''/> 
+                  <span>View my github activity</span>
+                  <ChevronRight className="h-5 w-5 text-gray-500 -ml-2" aria-hidden="true" />
+                  </div>
+                 </button>
+                </div>
+                </div>
+                
           </div>
+          
       </div>
     <About />
+    <AboutNew />
     <FeaturedProjects />
     </div>
   )

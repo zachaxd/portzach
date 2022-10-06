@@ -21,11 +21,19 @@ function GitCalendar() {
         });
       };
   return (
-    <div className='bg-black/40 rounded-lg px-6 py-4 text-white hover:bg-slate-900/20 hover:text-white/50 transition ease-in-out duration-150'>
+    <div className='bg-black/40 rounded-lg px-8 py-3 text-white'>
         <a href="#" className=''>
         <GitHubCalendar username="zachaxd" 
         color="#2563eb"
         transformData={selectLastHalfYear}
+        fontSize={11}
+        theme={{
+          level0: '#334155',
+          level1: '#6366f1',
+          level2: '#4f46e5',
+          level3: '#4338ca',
+          level4: '#3730a3'
+        }}
         />
         
         </a>

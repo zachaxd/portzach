@@ -18,6 +18,7 @@ function About() {
          </div>
         <span className='bg-white/20 w-[200px] h-[1px]'></span>
     </div>
+    
         <div className='flex gap-4 flex-col max-w-[360px] text-sm'>
         <p>
         Hello 👋 My name is Zachary and I enjoy building things that help people.
